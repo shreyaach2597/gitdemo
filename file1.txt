@@ -1,6 +1,6 @@
 this is first git demo.
 
-
+this is a new line.
 
 shreya_acharya@NG-JAVA-6 MINGW64 ~
 $ cd H:/gitdemo

@@ -1,17 +1,6 @@
 this is first git demo.
 
 
-shreya_acharya@NG-JAVA-6 MINGW64 ~
-$ cd H:\git demo
-bash: cd: H:git: No such file or directory
-
-shreya_acharya@NG-JAVA-6 MINGW64 ~
-$ cd H:/git demo
-bash: cd: H:/git: No such file or directory
-
-shreya_acharya@NG-JAVA-6 MINGW64 ~
-$ cd H:/git demo
-bash: cd: H:/git: No such file or directory
 
 shreya_acharya@NG-JAVA-6 MINGW64 ~
 $ cd H:/gitdemo

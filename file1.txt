@@ -74,12 +74,7 @@ user.name=shreya acharya
 user.email=shreya_acharya@persistent.com
 core.editor=notepad
 
-shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
-$ ^C
 
-
-shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
-$
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git init

@@ -112,6 +112,105 @@ shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (abc123)
 $
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch
+* master
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch abc123
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch
+  abc123
+* master
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git checkout abc123
+M       file1.txt
+Switched to branch 'abc123'
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (abc123)
+$ git status
+On branch abc123
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (abc123)
+$ git commit -am "added more"
+[abc123 57cdbee] added more
+ 1 file changed, 159 insertions(+)
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (abc123)
+$ git status
+On branch abc123
+nothing to commit, working tree clean
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (abc123)
+$ git log --oneline
+57cdbee added more
+ec9c953 change 2 in file1.txt
+8245671 change 1 in file1.txt
+dd14a34 req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (abc123)
+$ git checkout master
+Switched to branch 'master'
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --oneline
+ec9c953 change 2 in file1.txt
+8245671 change 1 in file1.txt
+dd14a34 req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git merge abc123
+Updating ec9c953..57cdbee
+Fast-forward
+ file1.txt | 159 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 159 insertions(+)
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --oneline
+57cdbee added more
+ec9c953 change 2 in file1.txt
+8245671 change 1 in file1.txt
+dd14a34 req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --oneline --graph --decorate
+* 57cdbee (HEAD -> master, abc123) added more
+* ec9c953 change 2 in file1.txt
+* 8245671 change 1 in file1.txt
+* dd14a34 req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch -d abc123
+Deleted branch abc123 (was 57cdbee).
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch
+* master
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch -d abc123
+error: branch 'abc123' not found.
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch -D abc123
+error: branch 'abc123' not found.
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git checkout -b idea
+Switched to a new branch 'idea'
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (idea)
+$
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git add file1.txt
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)

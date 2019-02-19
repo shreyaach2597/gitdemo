@@ -63,22 +63,13 @@ user.name=shreya acharya
 user.email=shreya_acharya@persistent.com
 core.editor=notepad
 
-shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
-$ ^C
 
-
-shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
-$
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git init
 Reinitialized existing Git repository in H:/gitdemo/.git/
 
-shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
-$ ^C
 
-shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
-$
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git branch
@@ -196,8 +187,6 @@ shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git checkout -b idea
 Switched to a new branch 'idea'
 
-shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (idea)
-$
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git add file1.txt
@@ -231,8 +220,7 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 
-shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
-$
+
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git status
@@ -272,8 +260,7 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 
-shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
-$
+
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git add file1.txt

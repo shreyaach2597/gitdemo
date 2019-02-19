@@ -91,6 +91,25 @@ $ ^C
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $
 
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch
+* master
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch abc123
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git branch
+  abc123
+* master
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git checkout abc123
+M       file1.txt
+Switched to branch 'abc123'
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (abc123)
+$
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git add file1.txt
@@ -164,6 +183,146 @@ shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $ git status
 On branch master
 nothing to commit, working tree clean
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git add file1.txt
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   file1.txt
+
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git commit -m "change 2 in file1.txt"
+[master ec9c953] change 2 in file1.txt
+ 1 file changed, 38 insertions(+)
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git commit -am "change 2 in file1"
+On branch master
+nothing to commit, working tree clean
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git commit -am "change 3 in file1"
+On branch master
+nothing to commit, working tree clean
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log
+commit ec9c953f10d4339686ab6b139d74f50af2ad2be3
+Author: shreya acharya <shreya_acharya@persistent.com>
+Date:   Tue Feb 19 12:42:46 2019 +0530
+
+    change 2 in file1.txt
+
+commit 8245671e0ed9974b1d761d6026cacb9abdca2403
+Author: shreya acharya <shreya_acharya@persistent.com>
+Date:   Tue Feb 19 12:41:16 2019 +0530
+
+    change 1 in file1.txt
+
+commit dd14a34fac407344e134b728e0f901679a6e6791
+Author: shreya acharya <shreya_acharya@persistent.com>
+Date:   Tue Feb 19 12:36:07 2019 +0530
+
+    req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --oneline
+ec9c953 change 2 in file1.txt
+8245671 change 1 in file1.txt
+dd14a34 req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --oneline -2
+ec9c953 change 2 in file1.txt
+8245671 change 1 in file1.txt
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --author="shreya" --oneline
+ec9c953 change 2 in file1.txt
+8245671 change 1 in file1.txt
+dd14a34 req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --since="02-18-2019" --oneline
+ec9c953 change 2 in file1.txt
+8245671 change 1 in file1.txt
+dd14a34 req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --since="02-19-2019" --oneline
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --until="02-19-2019" --oneline
+ec9c953 change 2 in file1.txt
+8245671 change 1 in file1.txt
+dd14a34 req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --until="02-18-2019" --oneline
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --greap="change"
+fatal: unrecognized argument: --greap=change
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --grep="change"
+commit ec9c953f10d4339686ab6b139d74f50af2ad2be3
+Author: shreya acharya <shreya_acharya@persistent.com>
+Date:   Tue Feb 19 12:42:46 2019 +0530
+
+    change 2 in file1.txt
+
+commit 8245671e0ed9974b1d761d6026cacb9abdca2403
+Author: shreya acharya <shreya_acharya@persistent.com>
+Date:   Tue Feb 19 12:41:16 2019 +0530
+
+    change 1 in file1.txt
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --help
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git log --oneline
+ec9c953 change 2 in file1.txt
+8245671 change 1 in file1.txt
+dd14a34 req:843756:- file1.txt is created hello git
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git checkout
+M       file1.txt
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ ^C
 
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $

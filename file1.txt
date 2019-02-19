@@ -91,3 +91,41 @@ $ ^C
 shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
 $
 
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git add file1.txt
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   file1.txt
+
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git commit
+unix2dos: converting file H:/gitdemo/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file H:/gitdemo/.git/COMMIT_EDITMSG to Unix format...
+Aborting commit due to empty commit message.
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git commit -m "req:843756:- file1.txt is created hello git"
+[master (root-commit) dd14a34] req:843756:- file1.txt is created hello git
+ 1 file changed, 93 insertions(+)
+ create mode 100644 file1.txt
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$
+
+
+

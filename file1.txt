@@ -1,0 +1,93 @@
+this is first git demo.
+
+
+shreya_acharya@NG-JAVA-6 MINGW64 ~
+$ cd H:\git demo
+bash: cd: H:git: No such file or directory
+
+shreya_acharya@NG-JAVA-6 MINGW64 ~
+$ cd H:/git demo
+bash: cd: H:/git: No such file or directory
+
+shreya_acharya@NG-JAVA-6 MINGW64 ~
+$ cd H:/git demo
+bash: cd: H:/git: No such file or directory
+
+shreya_acharya@NG-JAVA-6 MINGW64 ~
+$ cd H:/gitdemo
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ ls
+file1.txt
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ pwd
+/h/gitdemo
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ git config --global user.name "shreya acharya"
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ git config --global user.email "shreya_acharya@persistent.com"
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ git config user.name
+shreya acharya
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ git config user.email
+shreya_acharya@persistent.com
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+user.name=shreya acharya
+user.email=shreya_acharya@persistent.com
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ git config --global core.editor "notepad"
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+user.name=shreya acharya
+user.email=shreya_acharya@persistent.com
+core.editor=notepad
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$ ^C
+
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo
+$
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ git init
+Reinitialized existing Git repository in H:/gitdemo/.git/
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$ ^C
+
+shreya_acharya@NG-JAVA-6 MINGW64 /h/gitdemo (master)
+$
+
